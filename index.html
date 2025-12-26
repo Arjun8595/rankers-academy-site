@@ -1,0 +1,3698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rankers Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!--==== nav bar===== -->
+  <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="images/rankerslogo.jpeg" alt="Rankers Academy Logo">
+      <span>Rankers Academy</span>
+    </div>
+
+    <!-- DESKTOP SEARCH -->
+    <input type="text" id="searchInput" placeholder="Search class, subject, chapter..." onkeyup="searchContent()" />
+
+    <!-- MOBILE ICONS -->
+    <div class="nav-icons">
+      <span id="searchIcon">🔍</span>
+      <span id="menuIcon">&#9776;</span>
+    </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#ncert">Ncert Solution</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!--===== HERO SECTION ===== -->
+  <!-- whatsapp message   -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Rankers Academy</h1>
+      <p>Your journey to excellence starts here.</p>
+
+      <a href="#" class="cta-button" onclick="openJoinModal()">Join Rankers</a>
+    </div>
+
+    <svg class="hero-curve" viewBox="0 0 1440 160" preserveAspectRatio="none">
+      <path d="M0,80 C360,160 720,0 1440,100 L1440,160 L0,160 Z" fill="#fff"></path>
+    </svg>
+  </section>
+
+  <!-- =====JOIN MODAL=====-->
+  <div id="joinModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeJoinModal()">&times;</span>
+
+      <h2>Join Rankers Academy</h2>
+      <p>Fill the details below to join:</p>
+
+      <form id="joinForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="class" placeholder="Class" required>
+
+        <button type="button" class="submit-btn" onclick="sendToWhatsApp()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====ABOUT SECTION===== -->
+  <section class="about-section" id="about">
+
+
+    <div class="header">
+      <h2>We are two passionate coaches with years of experience</h2>
+      <h2 class="subheading">Two Mentors, One Mission 🎯📘</h2>
+    </div>
+
+    <div class="team-container">
+
+      <div class="coach-card">
+        <img src="images/arjun.jpeg" alt="Coach Arjun">
+        <h3>Uma shanker</h3>
+        <h4>Founder & Head Instructor</h4>
+        <p>Specialist in English and Social Studies with a passion for helping students excel.</p>
+      </div>
+
+      <div class="coach-card">
+        <img src="images/ravi.jpeg" alt="Coach Ravi">
+        <h3>Arjun </h3>
+        <h4>Co-Founder & Academic Mentor</h4>
+        <p>B.Tech (Engineer), DTU</p>
+        <p>Expert in Mathematics and Science with over 4 years of teaching experience.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!--===== COURSE SECTION ===== -->
+  <section class="courses-scroll" id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="scroll-container">
+
+      <div class="course-card">
+        <img src="images/1.2class.jpg" alt="">
+        <h3>Class 1</h3>
+        <p>Basic Maths + Reading Skills</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/2.1class.jpg" alt="">
+        <h3>Class 2</h3>
+        <p>Maths + English Foundation</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/3.1class.jpg" alt="">
+        <h3>Class 3</h3>
+        <p>Maths + EVS + English Basics</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/4.1class.jpg" alt="">
+        <h3>Class 4</h3>
+        <p>Maths + Science + Grammar Skills</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/5.1class.jpg" alt="">
+        <h3>Class 5</h3>
+        <p>Maths + Science + Olympiad Basics</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/6.1class.jpg" alt="">
+        <h3>Class 6</h3>
+        <p>Maths + Science Full Syllabus</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/7.1class.jpg" alt="">
+        <h3>Class 7</h3>
+        <p>Maths + Science + Weekly Tests</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/8.1class.jpg" alt="">
+        <h3>Class 8</h3>
+        <p>Maths + Science Complete Course</p>
+      </div>
+
+
+      <div class="course-card">
+        <img src="images/9.1class.jpg" alt="">
+        <h3>Class 9 Maths</h3>
+        <p>Full syllabus + weekly tests</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/10.2class.jpg" alt="">
+        <h3>Class 10 Maths</h3>
+        <p>Boards-oriented live classes</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/11.2class.jpg" alt="">
+        <h3>Class 11 Maths</h3>
+        <p>NCERT + PYQs + Doubts</p>
+      </div>
+
+      <div class="course-card">
+        <img src="images/12.1class.jpg" alt="">
+        <h3>Class 12 Maths</h3>
+        <p>Complete syllabus + sample papers</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!--=====OUR SERVICE SECTION====== -->
+  <section class="services-scroll" id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+
+      <div class="service-card">
+        <img src="images/Hometuion.jpg" alt="">
+        <h3>Home tuition</h3>
+        <p>Focused learning with personal guidance.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/dounbt.jpg" alt="">
+        <h3>Doubt Support</h3>
+        <p>Ask doubts anytime and get instant solutions.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/test.jpg" alt="">
+        <h3>Weekly Tests</h3>
+        <p>Test your preparation with structured mock tests.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/crashcourse.jpg" alt="">
+        <h3>Crash Courses for Boards</h3>
+        <p>High-quality notes & chapter-wise PDFs.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/dounbt.jpg" alt="Compartment Classes">
+        <h3>Compartment Classes</h3>
+        <p>Focused revision & doubt clearing to help you pass compartment exams.</p>
+        <span class="badge">Limited Seats</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====Next notes & Study Material===== -->
+  <section class="notes" id="notes">
+    <h2>📚 Notes & Study Material</h2>
+    <p>Download high-quality notes prepared by expert educators.</p>
+
+    <div class="notes-container">
+
+      <div class="note-card">
+        <h3>Class 9 Maths</h3>
+        <h4>English Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class9A')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+
+          <!--CLASS 9 MATHS ENGLISH  -->
+          <div class="accordion-body" id="class9A">
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Maths Chapter 1',
+        'Number Systems – Solution',
+        'PDF/9th imp que ch1.pdf'
+      )">
+              <h4>Chapter 1: Number Systems</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 2',
+        'Polynomials – Chapter Solution',
+        'PDF/9th maths chapter2.pdf'
+      )">
+              <h4>Chapter 2: Polynomials</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 12 –Chapter 3',
+        'Coordinate Geometry – Solution',
+        'PDF/9th maths chapter3.pdf'
+      )">
+              <h4>Chapter 3: Coordinate Geometry</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 4',
+        ' Linear Equations in Two Variables – Chapter Solution',
+        'PDF/9th maths chapter 4.pdf'
+      )">
+              <h4>Chapter 4: Linear Equations in Two Variables</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 5',
+        'Introduction to Euclid’s Geometry – Chapter Solution',
+        'PDF/9th maths chapter 5.pdf'
+      )">
+              <h4>Chapter 5: Introduction to Euclid’s Geometry</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 6',
+        'Lines and Angles – Chapter Solution',
+        'PDF/9th maths chapter 6.pdf'
+      )">
+              <h4>Chapter 6: Lines and Angles</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 7',
+        'Triangles – Chapter Solution',
+        'PDF/9th maths chapter 7.pdf'
+      )">
+              <h4>Chapter 7: Triangles</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 8',
+        ' Quadrilaterals – Chapter Solution',
+        'PDF/9th maths chapter 8.pdf'
+      )">
+              <h4>Chapter 8: Quadrilaterals</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 9',
+        'Circles – Chapter Solution',
+        'PDF/9th maths chapter 9.pdf'
+      )">
+              <h4>Chapter 9: Circles</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 10',
+        'Heron’s Formula – Chapter Solution',
+        'PDF/9th maths chapter 10.pdf'
+      )">
+              <h4>Chapter 10: Heron’s Formula</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 11',
+        ' Surface Areas and Volumes – Chapter Solution',
+        'PDF/9th maths chapter11.pdf'
+      )">
+              <h4>Chapter 11: Surface Areas and Volumes</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 12',
+        'Statistics – Chapter Solution',
+        'PDF/9th maths chapter 12.pdf'
+      )">
+
+              <h4>Chapter 12: Statistics</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 13',
+        'Probability – Chapter Solution',
+        'PDF/9th maths chapter 14.pdf'
+      )">
+
+              <h4>Chapter 13: Probability</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next -->
+      <!-- MODAL -->
+      <div id="notesModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeBtn">&times;</span>
+
+          <h2 id="modalTitle"></h2>
+          <p id="modalDesc"></p>
+
+          <!-- OPEN PDF BUTTON -->
+          <a id="pdfBtn" href="#" target="_blank" class="pdf-button">
+            Open PDF
+          </a>
+
+          <a id="downloadBtn" href="#" download class="download-button">
+            Download PDF
+          </a>
+
+        </div>
+      </div>
+
+      <!-- next class 9 Maths hindi medium-->
+      <div class="note-card">
+        <h3>Class 9 Maths</h3>
+        <h4>Hindi Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class9B')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class9B">
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – संख्या पद्धति 1',
+        'संख्या पद्धति – Notes',
+        'chapter1.pdf'
+      )">
+              <h4>अध्याय 1: संख्या पद्धति</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 2',
+        'अध्याय 2 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 2: बहुपद</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 –  अध्याय 3',
+        'निर्देशांक ज्यामिति – Notes',
+        'pdf/class11-math-ch1.pdf'
+      )">
+              <h4>अध्याय 3 :निर्देशांक ज्यामिति </h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 4',
+        'अध्याय 4 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 4: दो चरों वाले रैखिक समीकरण</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 5',
+        'अध्याय 5 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 5: यूक्लिड की ज्यामिति का परिचय</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 6',
+        'अध्याय 6 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 6: रेखाएँ और कोण</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 7',
+        'अध्याय 7 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 7: त्रिभुज</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 8',
+        'अध्याय 8 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 8: चतुर्भुज</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 9',
+        'अध्याय 9 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 9: वृत्त</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 10',
+        'अध्याय 10 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 10: हीरोन का सूत्र</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 11',
+        'अध्याय 11 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 11: पृष्ठीय क्षेत्रफल और आयतन</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 12',
+        'अध्याय 12 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 12: सांख्यिकी</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – अध्याय 13',
+        'अध्याय 13 – Notes',
+        'pdf/class11-chem-ch1.pdf'
+      )">
+              <h4>अध्याय 13: प्रायिकता</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next class 9 science ENGLISH-->
+      <div class="note-card">
+        <h3>Class 9 Science</h3>
+        <h4>English Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class9C')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class9C">
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chemistry Chapter 1',
+        'Matter in Our Surroundings – Notes',
+        'chapter1.pdf'
+      )">
+              <h4>Chemistry Chapter 1: Matter in Our Surroundings</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 2',
+        'Is Matter Around Us Pure? – Notes',
+        'pdf/class9-sci-ch1.pdf'
+      )">
+              <h4>Chapter 2: Is Matter Around Us Pure?</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 3',
+        'Atoms and Molecules – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 3: Atoms and Molecules</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 4',
+        'Structure of the Atom – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 4: Structure of the Atom</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Biology Chapter 5',
+        'AThe Fundamental Unit of Life (Cell) – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Biology Chapter 5: The Fundamental Unit of Life (Cell)</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 6',
+        'Tissues – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 6: Tissues </h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 7',
+        'Diversity in Living Organisms – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 7: Diversity in Living Organisms</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 8',
+        'Why Do We Fall Ill? – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 8:Why Do We Fall Ill?</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 9',
+        'Natural Resources – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 9: Natural Resources</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 10',
+        'Improvement in Food Resources – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 10: Improvement in Food Resources</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 11',
+        'Motion – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Physics Chapter 11: Motion</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 12',
+        'Force and Laws of Motion – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 12: Force and Laws of Motion</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 13',
+        'Gravitation – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 13: Gravitation</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 14',
+        'Work and Energy – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 14: Work and Energy</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – Chapter 15',
+        'Sound – Notes',
+        'pdf/class9-eng-ch1.pdf'
+      )">
+              <h4>Chapter 15: Sound</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next class 9 science hindi -->
+      <div class="note-card">
+        <h3>Class 9 Science</h3>
+        <h4>Hindi Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class9D')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class9D">
+
+            <div class="chapter search-item" onclick="openModal(
+        'Class 9 – रसायन विज्ञान अध्याय 1',
+        'हमारे आस-पास के पदार्थ – Notes',
+        'chapter1.pdf'
+      )">
+              <h4>रसायन विज्ञान अध्याय 1: हमारे आस-पास के पदार्थ</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – रसायन विज्ञान',
+  'क्या हमारे आस-पास का पदार्थ शुद्ध है? – Notes',
+  'chem_ch2.pdf'
+)">
+              <h4>अध्याय 2: क्या हमारे आस-पास का पदार्थ शुद्ध है?</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – रसायन विज्ञान',
+  'परमाणु एवं अणु – Notes',
+  'chem_ch3.pdf'
+)">
+              <h4>अध्याय 3: परमाणु एवं अणु</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – रसायन विज्ञान',
+  'परमाणु की संरचना – Notes',
+  'chem_ch4.pdf'
+)">
+              <h4>अध्याय 4: परमाणु की संरचना</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – जीव विज्ञान',
+  'जीवन की मौलिक इकाई (कोशिका) – Notes',
+  'bio_ch5.pdf'
+)">
+              <h4>जीव विज्ञान अध्याय 5: जीवन की मौलिक इकाई (कोशिका)</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – जीव विज्ञान',
+  'ऊतक – Notes',
+  'bio_ch6.pdf'
+)">
+              <h4>अध्याय 6: ऊतक</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – जीव विज्ञान',
+  'जीवों में विविधता – Notes',
+  'bio_ch7.pdf'
+)">
+              <h4>अध्याय 7: जीवों में विविधता</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – जीव विज्ञान',
+  'हम बीमार क्यों पड़ते हैं? – Notes',
+  'bio_ch8.pdf'
+)">
+              <h4>अध्याय 8: हम बीमार क्यों पड़ते हैं?</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – जीव विज्ञान',
+  'प्राकृतिक संसाधन – Notes',
+  'bio_ch9.pdf'
+)">
+              <h4>अध्याय 9: प्राकृतिक संसाधन</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – जीव विज्ञान',
+  'खाद्य संसाधनों में सुधार – Notes',
+  'bio_ch10.pdf'
+)">
+              <h4>अध्याय 10: खाद्य संसाधनों में सुधार</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – भौतिक विज्ञान',
+  'गति – Notes',
+  'phy_ch11.pdf'
+)">
+              <h4>भौतिक विज्ञान अध्याय 11: गति</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – भौतिक विज्ञान',
+  'बल तथा गति के नियम – Notes',
+  'phy_ch12.pdf'
+)">
+              <h4>अध्याय 12: बल तथा गति के नियम</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – भौतिक विज्ञान',
+  'गुरुत्वाकर्षण – Notes',
+  'phy_ch13.pdf'
+)">
+              <h4>अध्याय 13: गुरुत्वाकर्षण</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – भौतिक विज्ञान',
+  'कार्य तथा ऊर्जा – Notes',
+  'phy_ch14.pdf'
+)">
+              <h4>अध्याय 14: कार्य तथा ऊर्जा</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal(
+  'Class 9 – भौतिक विज्ञान',
+  'ध्वनि – Notes',
+  'phy_ch15.pdf'
+)">
+              <h4>अध्याय 15: ध्वनि</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next 10th class A -->
+      <div class="note-card">
+        <h3>Class 10 Maths</h3>
+        <h4>English Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class10A')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class10A">
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','Real Numbers – Notes',
+              'PDF/10th chapter 1.pdf')">
+              <h4>Chapter 1: Real Numbers</h4>
+            </div>
+
+              <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','Real Numbers – Notes',
+              'PDF/10th chapter2 maths.pdf')">
+              <h4>Chapter 2: Polynomials</h4>
+            </div>
+
+             <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','Real Numbers – Notes',
+              'PDF/10th maths chapter3.pdf')">
+              <h4>Chapter 3: Pair of Linear Equations in Two Variables</h4>
+            </div>
+
+              <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','Real Numbers – Notes',
+              'PDF/10th maths ch4.pdf')">
+              <h4>Chapter 4: Quadratic Equations</h4>
+            </div>
+
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 5','Arithmetic Progressions – Notes','chapter5.pdf')">
+              <h4>Chapter 5: Arithmetic Progressions</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 6','Triangles – Notes',
+              'PDF/10th maths ch6.pdf')">
+              <h4>Chapter 6: Triangles</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 7','Coordinate Geometry – Notes','PDF/10th maths ch7.pdf')">
+              <h4>Chapter 7: Coordinate Geometry</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 8','Introduction to Trigonometry – Notes','PDF/10th maths ch8.pdf')">
+              <h4>Chapter 8: Introduction to Trigonometry</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 9','Some Applications of Trigonometry (Heights and Distances) – Notes','PDF/10th maths ch9.pdf')">
+              <h4>Chapter 9: Some Applications of Trigonometry (Heights and Distances)</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 10','Circles – Notes','PDF/10th maths ch10.pdf')">
+              <h4>Chapter 10: Circles</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 11','Areas Related to Circles – Notes','PDF/10th maths ch11.pdf')">
+              <h4>Chapter 11: Areas Related to Circles</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 12','Surface Areas and Volumes – Notes','PDF/10th maths ch12.pdf')">
+              <h4>Chapter 12: Surface Areas and Volumes</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 13','Statistics – Notes','chapter13.pdf')">
+              <h4>Chapter 13: Statistics</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 14','Probability – Notes','chapter14.pdf')">
+              <h4>Chapter 14: Probability</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next 10th class B -->
+      <div class="note-card">
+        <h3>Class 10 Maths</h3>
+        <h4>Hindi Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class10B')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class10B">
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','वास्तविक संख्याएँ – Notes','chapter1.pdf')">
+              <h4>अध्याय 1: वास्तविक संख्याएँ</h4>
+            </div>
+
+            <div class="chapter search-item" onclick="openModal('Class 10 – Chapter 2','बहुपद – Notes','chapter2.pdf')">
+              <h4>अध्याय 2: बहुपद</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 3','दो चरों वाले रैखिक समीकरणों के युग्म – Notes','chapter3.pdf')">
+              <h4>अध्याय 3: दो चरों वाले रैखिक समीकरणों के युग्म</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 4','द्विघात समीकरण – Notes','chapter4.pdf')">
+              <h4>अध्याय 4: द्विघात समीकरण</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 5','समांतर श्रेणियाँ – Notes','chapter5.pdf')">
+              <h4>अध्याय 5: समांतर श्रेणियाँ</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 6','त्रिभुज – Notes','chapter6.pdf')">
+              <h4>अध्याय 6: त्रिभुज</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 7','निर्देशांक ज्यामिति – Notes','chapter7.pdf')">
+              <h4>अध्याय 7: निर्देशांक ज्यामिति</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 8','त्रिकोणमिति का परिचय – Notes','chapter8.pdf')">
+              <h4>अध्याय 8: त्रिकोणमिति का परिचय</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 9','त्रिकोणमिति के कुछ अनुप्रयोग (ऊँचाई और दूरी) – Notes','chapter9.pdf')">
+              <h4>अध्याय 9: त्रिकोणमिति के कुछ अनुप्रयोग (ऊँचाई और दूरी)</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 10','वृत्त – Notes','chapter10.pdf')">
+              <h4>अध्याय 10: वृत्त</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 11','वृत्तों से संबंधित क्षेत्रफल – Notes','chapter11.pdf')">
+              <h4>अध्याय 11: वृत्तों से संबंधित क्षेत्रफल</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 12','पृष्ठीय क्षेत्रफल और आयतन – Notes','chapter12.pdf')">
+              <h4>अध्याय 12: पृष्ठीय क्षेत्रफल और आयतन</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 13','सांख्यिकी – Notes','chapter13.pdf')">
+              <h4>अध्याय 13: सांख्यिकी</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 14','प्रायिकता – Notes','chapter14.pdf')">
+              <h4>अध्याय 14: प्रायिकता</h4>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next 10th class C -->
+      <div class="note-card">
+        <h3>Class 10 Science</h3>
+        <h4>English Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class10C')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class10C">
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','Chemical Reactions and Equations – Notes','chapter1.pdf')">
+              <h4>Chapter 1: Chemical Reactions and Equations</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 2','Acids, Bases and Salts – Notes','chapter2.pdf')">
+              <h4>Chapter 2: Acids, Bases and Salts</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 3','Metals and Non-metals – Notes','chapter3.pdf')">
+              <h4>Chapter 3: Metals and Non-metals</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 4','Carbon and its Compounds – Notes','chapter4.pdf')">
+              <h4>Chapter 4: Carbon and its Compounds</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 5','Life Processes – Notes','chapter5.pdf')">
+              <h4>Chapter 5: Life Processes</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 6','Control and Coordination – Notes','chapter6.pdf')">
+              <h4>Chapter 6: Control and Coordination</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 7','How Do Organisms Reproduce? – Notes','chapter7.pdf')">
+              <h4>Chapter 7: How Do Organisms Reproduce?</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 8','Heredity – Notes','chapter8.pdf')">
+              <h4>Chapter 8: Heredity</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 9','Light – Reflection and Refraction – Notes','chapter9.pdf')">
+              <h4>Chapter 9: Light – Reflection and Refraction</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 10','The Human Eye and the Colourful World – Notes','chapter10.pdf')">
+              <h4>Chapter 10: The Human Eye and the Colourful World</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 11','Electricity – Notes','chapter11.pdf')">
+              <h4>Chapter 11: Electricity</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 12','Magnetic Effects of Electric Current – Notes','chapter12.pdf')">
+              <h4>Chapter 12: Magnetic Effects of Electric Current</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 13','Our Environment – Notes','chapter13.pdf')">
+              <h4>Chapter 13: Our Environment</h4>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- next 10th class D Hindi-->
+      <div class="note-card">
+        <h3>Class 10 Science</h3>
+        <h4>Hindi Medium</h4>
+        <p>Complete exam-ready notes</p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion('class10c')">
+            <h3>Chapter wise – Notes</h3>
+          </div>
+
+          <div class="accordion-body" id="class10c">
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 1','रासायनिक अभिक्रियाएँ और समीकरण – Notes','chapter1.pdf')">
+              <h4>अध्याय 1: रासायनिक अभिक्रियाएँ और समीकरण</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 2','अम्ल, क्षारक एवं लवण – Notes','chapter2.pdf')">
+              <h4>अध्याय 2: अम्ल, क्षारक एवं लवण</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 3','धातु और अधातु – Notes','chapter3.pdf')">
+              <h4>अध्याय 3: धातु और अधातु</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 4','कार्बन एवं उसके यौगिक – Notes','chapter4.pdf')">
+              <h4>अध्याय 4: कार्बन एवं उसके यौगिक</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 5','जैव प्रक्रम – Notes','chapter5.pdf')">
+              <h4>अध्याय 5: जैव प्रक्रम</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 6','नियंत्रण एवं समन्वय – Notes','chapter6.pdf')">
+              <h4>अध्याय 6: नियंत्रण एवं समन्वय</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 7','जीव जनन कैसे करते हैं? – Notes','chapter7.pdf')">
+              <h4>अध्याय 7: जीव जनन कैसे करते हैं?</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 8','आनुवंशिकता – Notes','chapter8.pdf')">
+              <h4>अध्याय 8: आनुवंशिकता</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 9','प्रकाश – परावर्तन तथा अपवर्तन – Notes','chapter9.pdf')">
+              <h4>अध्याय 9: प्रकाश – परावर्तन तथा अपवर्तन</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 10','मानव नेत्र तथा रंग-बिरंगा संसार – Notes','chapter10.pdf')">
+              <h4>अध्याय 10: मानव नेत्र तथा रंग-बिरंगा संसार</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 11','विद्युत – Notes','chapter11.pdf')">
+              <h4>अध्याय 11: विद्युत</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 12','विद्युत धारा के चुंबकीय प्रभाव – Notes','chapter12.pdf')">
+              <h4>अध्याय 12: विद्युत धारा के चुंबकीय प्रभाव</h4>
+            </div>
+
+            <div class="chapter search-item"
+              onclick="openModal('Class 10 – Chapter 13','हमारा पर्यावरण – Notes','chapter13.pdf')">
+              <h4>अध्याय 13: हमारा पर्यावरण</h4>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= NCERT NOTES (11th & 12th) ================= -->
+  <div class="ncert-notes">
+
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="header">
+        <h1>📘 NCERT Notes – Class 11th & 12th</h1>
+        <p>Chapter-wise Notes | PDF View & Download</p>
+      </div>
+
+      <!-- CLASS SELECTION -->
+      <div id="notesClassSection" class="section">
+        <h2>Select Your Class</h2>
+
+        <div class="grid">
+          <div class="card" onclick="notesSelectClass('11')">
+            Class 11th Notes
+          </div>
+          <div class="card" onclick="notesSelectClass('12')">
+            Class 12th Notes
+          </div>
+        </div>
+      </div>
+
+      <!-- STREAM SELECTION -->
+      <div id="notesStreamSection" class="section hidden">
+        <button class="back-btn" onclick="notesGoBack('class')">← Back</button>
+        <div class="breadcrumb">
+          Class <span id="notesSelectedClass"></span>
+        </div>
+
+        <h2>Select Stream</h2>
+
+        <div class="grid">
+          <div class="card" onclick="notesSelectStream('Science')">🔬 Science</div>
+          <div class="card" onclick="notesSelectStream('Commerce')">💼 Commerce</div>
+          <div class="card" onclick="notesSelectStream('Arts')">🎨 Arts</div>
+        </div>
+      </div>
+
+      <!-- SUBJECT SELECTION -->
+      <div id="notesSubjectSection" class="section hidden">
+        <button class="back-btn" onclick="notesGoBack('stream')">← Back</button>
+
+        <div class="breadcrumb">
+          Class <span id="notesBcClass"></span> ›
+          <span id="notesBcStream"></span>
+        </div>
+
+        <h2>Select Subject</h2>
+        <div id="notesSubjectGrid" class="grid"></div>
+      </div>
+
+      <!-- MEDIUM SELECTION -->
+      <div id="notesMediumSection" class="section hidden">
+        <button class="back-btn" onclick="notesGoBack('subject')">← Back</button>
+
+        <div class="breadcrumb">
+          Class <span id="notesBcClass2"></span> ›
+          <span id="notesBcStream2"></span> ›
+          <span id="notesBcSubject"></span>
+        </div>
+
+        <h2>Select Medium</h2>
+
+        <div class="grid">
+          <div class="card" onclick="notesSelectMedium('English')">📘 English</div>
+          <div class="card" onclick="notesSelectMedium('Hindi')">📕 हिंदी</div>
+        </div>
+      </div>
+
+      <!-- CHAPTER LIST -->
+      <div id="notesChapterSection" class="section hidden">
+        <button class="back-btn" onclick="notesGoBack('medium')">← Back</button>
+
+        <div class="breadcrumb">
+          Class <span id="notesBcClass3"></span> ›
+          <span id="notesBcStream3"></span> ›
+          <span id="notesBcSubject2"></span> ›
+          <span id="notesBcMedium"></span>
+        </div>
+
+        <h2>Chapter-wise Notes</h2>
+        <ul id="notesChapterList" class="chapter-list"></ul>
+      </div>
+
+      <!-- PDF VIEWER -->
+      <div id="notesPdfSection" class="section hidden">
+        <button class="back-btn" onclick="notesGoBack('chapter')">
+          ← Back to Chapters
+        </button>
+
+        <div class="breadcrumb" id="notesPdfBreadcrumb"></div>
+        <h2 id="notesPdfTitle"></h2>
+
+        <iframe id="notesPdfViewer" class="pdf-viewer" src="" loading="lazy">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== NCERT SOLUTION 11TH & 12TH ====== -->
+  <div class="container">
+    <div class="header">
+      <h1>📚 NCERT Solutions Class 11th & 12th</h1>
+      <p>Complete Solutions for Class 11th & 12th</p>
+    </div>
+
+    <!-- Class Selection -->
+    <div id="classSection" class="section">
+      <h2>Select Your Class</h2>
+      <div class="grid">
+        <div class="card" onclick="selectClass('11')">
+          <h3>Class 11th</h3>
+        </div>
+        <div class="card" onclick="selectClass('12')">
+          <h3>Class 12th</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stream Selection -->
+    <div id="streamSection" class="section hidden">
+      <button class="back-btn" onclick="goBack('class')">← Back</button>
+      <div class="breadcrumb">Class <span id="selectedClass"></span></div>
+      <h2>Select Your Stream</h2>
+      <div class="grid">
+        <div class="card" onclick="selectStream('Arts')">
+          <h3>🎨 Arts</h3>
+        </div>
+        <div class="card" onclick="selectStream('Commerce')">
+          <h3>💼 Commerce</h3>
+        </div>
+        <div class="card" onclick="selectStream('Science')">
+          <h3>🔬 Science</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subject Selection -->
+    <div id="subjectSection" class="section hidden">
+      <button class="back-btn" onclick="goBack('stream')">← Back</button>
+      <div class="breadcrumb">Class <span id="bcClass"></span> > <span id="bcStream"></span></div>
+      <h2>Select Your Subject</h2>
+      <div id="subjectGrid" class="grid"></div>
+    </div>
+
+    <!-- Medium Selection -->
+    <div id="mediumSection" class="section hidden">
+      <button class="back-btn" onclick="goBack('subject')">← Back</button>
+      <div class="breadcrumb">Class <span id="bcClass2"></span> > <span id="bcStream2"></span> > <span
+          id="bcSubject"></span></div>
+      <h2>Select Medium</h2>
+      <div class="grid">
+        <div class="card" onclick="selectMedium('English')">
+          <h3>📖 English</h3>
+        </div>
+        <div class="card" onclick="selectMedium('Hindi')">
+          <h3>📖 हिंदी</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chapter List -->
+    <div id="chapterSection" class="section hidden">
+      <button class="back-btn" onclick="goBack('medium')">← Back</button>
+      <div class="breadcrumb">Class <span id="bcClass3"></span> > <span id="bcStream3"></span> > <span
+          id="bcSubject2"></span> > <span id="bcMedium"></span></div>
+      <h2>Chapters</h2>
+      <ul id="chapterList" class="chapter-list"></ul>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div id="pdfSection" class="section hidden">
+      <button class="back-btn" onclick="goBack('chapter')">← Back to Chapters</button>
+      <div class="breadcrumb">
+        <span id="pdfBreadcrumb"></span>
+      </div>
+      <h2 id="pdfTitle"></h2>
+      <iframe id="pdfViewer" class="pdf-viewer"></iframe>
+    </div>
+  </div>
+
+  <!-- =====NCERT SOLUTION 1st to 10th===== -->
+  <section class="ncert-section" id="ncert">
+    <h2>NCERT Solutions – Class 1st to 10th</h2>
+
+    <!-- CLASS BUTTONS -->
+    <div class="class-list">
+      <button onclick="openClass('class1')">Class 1</button>
+      <button onclick="openClass('class2')">Class 2</button>
+      <button onclick="openClass('class3')">Class 3</button>
+      <button onclick="openClass('class4')">Class 4</button>
+      <button onclick="openClass('class5')">Class 5</button>
+      <button onclick="openClass('class6')">Class 6</button>
+      <button onclick="openClass('class7')">Class 7</button>
+      <button onclick="openClass('class8')">Class 8</button>
+      <button onclick="openClass('class9')">Class 9</button>
+      <button onclick="openClass('class10')">Class 10</button>
+    </div>
+
+    <!-- ========== CLASS 1 ========== -->
+
+    <div id="class1" class="class-box">
+      <h2>Class 1 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c1eng')">English</button>
+        <button onclick="openSubject('c1hin')">Hindi</button>
+        <button onclick="openSubject('c1math')">Maths</button>
+        <button onclick="openSubject('c1sci')">Science</button>
+        <button onclick="openSubject('c1sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c1eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c1engEng')">English Medium</button>
+          <button onclick="openMedium('c1engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c1engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c1engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c1hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c1hinEng')">English Medium</button>
+          <button onclick="openMedium('c1hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c1hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c1hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c1math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c1mathEng')">English Medium</button>
+          <button onclick="openMedium('c1mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c1mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Numbers 1–10
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Addition
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c1mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – संख्या 1–10
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जोड़
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c1sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c1sciEng')">English Medium</button>
+          <button onclick="openMedium('c1sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c1sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Plants
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Animals
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c1sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – पौधे
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जानवर
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c1sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c1sstEng')">English Medium</button>
+          <button onclick="openMedium('c1sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c1sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – My School
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Our Helpers
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c1sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – मेरा विद्यालय
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – हमारे सहायक
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========== CLASS 2 ========== -->
+    <div id="class2" class="class-box">
+      <h2>Class 2 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c2eng')">English</button>
+        <button onclick="openSubject('c2hin')">Hindi</button>
+        <button onclick="openSubject('c2math')">Maths</button>
+        <button onclick="openSubject('c2sci')">Science</button>
+        <button onclick="openSubject('c2sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c2eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2engEng')">English Medium</button>
+          <button onclick="openMedium('c2engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c2hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2hinEng')">English Medium</button>
+          <button onclick="openMedium('c2hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c2math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2mathEng')">English Medium</button>
+          <button onclick="openMedium('c2mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Numbers 1–10
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Addition
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – संख्या 1–10
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जोड़
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c2sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sciEng')">English Medium</button>
+          <button onclick="openMedium('c2sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Plants
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Animals
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c2sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें</li>
+            <li>अध्याय 2 – पौधे</li>
+            <li>अध्याय 3 – जानवर</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c2sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sstEng')">English Medium</button>
+          <button onclick="openMedium('c2sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – My School
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Our Helpers
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c2sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – मेरा विद्यालय
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – हमारे सहायक
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========== CLASS 3 ========== -->
+    <div id="class3" class="class-box">
+      <h2>Class 3 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c3eng')">English</button>
+        <button onclick="openSubject('c3hin')">Hindi</button>
+        <button onclick="openSubject('c3math')">Maths</button>
+        <button onclick="openSubject('c3sci')">Science</button>
+        <button onclick="openSubject('c3sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c3eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c3engEng')">English Medium</button>
+          <button onclick="openMedium('c3engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c3engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c3hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c3hinEng')">English Medium</button>
+          <button onclick="openMedium('c3hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c3hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c3hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c3math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c3mathEng')">English Medium</button>
+          <button onclick="openMedium('c3mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c3mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Numbers 1–10
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Addition
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c3mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – संख्या 1–10
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जोड़
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c3sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c3sciEng')">English Medium</button>
+          <button onclick="openMedium('c3sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c3sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Plants
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Animals
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c3sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – पौधे
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जानवर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c3sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c3sstEng')">English Medium</button>
+          <button onclick="openMedium('c3sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c3sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – My School
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Our Helpers
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c3sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>
+        </div>
+      </div>
+
+    </div>
+
+    <!--===== CLASS 4 =====-->
+    <div id="class4" class="class-box">
+      <h2>Class 4 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c4eng')">English</button>
+        <button onclick="openSubject('c4hin')">Hindi</button>
+        <button onclick="openSubject('c4math')">Maths</button>
+        <button onclick="openSubject('c4sci')">Science</button>
+        <button onclick="openSubject('c4sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c4eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c4engEng')">English Medium</button>
+          <button onclick="openMedium('c4engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c4engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c4engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c4hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c4hinEng')">English Medium</button>
+          <button onclick="openMedium('c4hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c4hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c4hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c4math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c4mathEng')">English Medium</button>
+          <button onclick="openMedium('c4mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c4mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Numbers 1–10
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Addition
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c4mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – संख्या 1–10
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जोड़
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c4sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c4sciEng')">English Medium</button>
+          <button onclick="openMedium('c4sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c4sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Plants
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Animals
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c4sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – पौधे
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जानवर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c4sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c4sstEng')">English Medium</button>
+          <button onclick="openMedium('c4sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c4sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – My School
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Our Helpers
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c4sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – मेरा विद्यालय
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – हमारे सहायक
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- CLASS 5 -->
+    <div id="class5" class="class-box">
+      <h2>Class 5 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c5eng')">English</button>
+        <button onclick="openSubject('c5hin')">Hindi</button>
+        <button onclick="openSubject('c5math')">Maths</button>
+        <button onclick="openSubject('c5sci')">Science</button>
+        <button onclick="openSubject('c5sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c5eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c5engEng')">English Medium</button>
+          <button onclick="openMedium('c5engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c5engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c5engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c5hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c5hinEng')">English Medium</button>
+          <button onclick="openMedium('c5hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c5hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c5hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c5math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c5mathEng')">English Medium</button>
+          <button onclick="openMedium('c5mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c5mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes</li>
+            <li>Chapter 2 – Numbers 1–10</li>
+            <li>Chapter 3 – Addition</li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c5mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ</li>
+            <li>अध्याय 2 – संख्या 1–10</li>
+            <li>अध्याय 3 – जोड़</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c5sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c5sciEng')">English Medium</button>
+          <button onclick="openMedium('c5sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c5sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things</li>
+            <li>Chapter 2 – Plants</li>
+            <li>Chapter 3 – Animals</li>
+          </ul>
+        </div>
+
+        <div id="c5sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें</li>
+            <li>अध्याय 2 – पौधे</li>
+            <li>अध्याय 3 – जानवर</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c5sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c5sstEng')">English Medium</button>
+          <button onclick="openMedium('c5sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c5sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family</li>
+            <li>Chapter 2 – My School</li>
+            <li>Chapter 3 – Our Helpers</li>
+          </ul>
+        </div>
+
+        <div id="c5sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार</li>
+            <li>अध्याय 2 – मेरा विद्यालय</li>
+            <li>अध्याय 3 – हमारे सहायक</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLASS 6 -->
+    <div id="class6" class="class-box">
+      <h2>Class 6 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c2eng')">English</button>
+        <button onclick="openSubject('c2hin')">Hindi</button>
+        <button onclick="openSubject('c2math')">Maths</button>
+        <button onclick="openSubject('c2sci')">Science</button>
+        <button onclick="openSubject('c2sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c2eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2engEng')">English Medium</button>
+          <button onclick="openMedium('c2engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c2hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2hinEng')">English Medium</button>
+          <button onclick="openMedium('c2hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c2math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2mathEng')">English Medium</button>
+          <button onclick="openMedium('c2mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes</li>
+            <li>Chapter 2 – Numbers 1–10</li>
+            <li>Chapter 3 – Addition</li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ</li>
+            <li>अध्याय 2 – संख्या 1–10</li>
+            <li>अध्याय 3 – जोड़</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c2sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sciEng')">English Medium</button>
+          <button onclick="openMedium('c2sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things</li>
+            <li>Chapter 2 – Plants</li>
+            <li>Chapter 3 – Animals</li>
+          </ul>
+        </div>
+
+        <div id="c2sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें</li>
+            <li>अध्याय 2 – पौधे</li>
+            <li>अध्याय 3 – जानवर</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c2sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sstEng')">English Medium</button>
+          <button onclick="openMedium('c2sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family</li>
+            <li>Chapter 2 – My School</li>
+            <li>Chapter 3 – Our Helpers</li>
+          </ul>
+        </div>
+
+        <div id="c2sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार</li>
+            <li>अध्याय 2 – मेरा विद्यालय</li>
+            <li>अध्याय 3 – हमारे सहायक</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLASS 7 -->
+    <div id="class7" class="class-box">
+      <h2>Class 7 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c2eng')">English</button>
+        <button onclick="openSubject('c2hin')">Hindi</button>
+        <button onclick="openSubject('c2math')">Maths</button>
+        <button onclick="openSubject('c2sci')">Science</button>
+        <button onclick="openSubject('c2sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c2eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2engEng')">English Medium</button>
+          <button onclick="openMedium('c2engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c2hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2hinEng')">English Medium</button>
+          <button onclick="openMedium('c2hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c2math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2mathEng')">English Medium</button>
+          <button onclick="openMedium('c2mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes</li>
+            <li>Chapter 2 – Numbers 1–10</li>
+            <li>Chapter 3 – Addition</li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ</li>
+            <li>अध्याय 2 – संख्या 1–10</li>
+            <li>अध्याय 3 – जोड़</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c2sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sciEng')">English Medium</button>
+          <button onclick="openMedium('c2sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things</li>
+            <li>Chapter 2 – Plants</li>
+            <li>Chapter 3 – Animals</li>
+          </ul>
+        </div>
+
+        <div id="c2sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें</li>
+            <li>अध्याय 2 – पौधे</li>
+            <li>अध्याय 3 – जानवर</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c2sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sstEng')">English Medium</button>
+          <button onclick="openMedium('c2sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family</li>
+            <li>Chapter 2 – My School</li>
+            <li>Chapter 3 – Our Helpers</li>
+          </ul>
+        </div>
+
+        <div id="c2sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार</li>
+            <li>अध्याय 2 – मेरा विद्यालय</li>
+            <li>अध्याय 3 – हमारे सहायक</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLASS 8 -->
+    <div id="class8" class="class-box">
+      <h2>Class 8 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c8eng')">English</button>
+        <button onclick="openSubject('c8hin')">Hindi</button>
+        <button onclick="openSubject('c8math')">Maths</button>
+        <button onclick="openSubject('c8sci')">Science</button>
+        <button onclick="openSubject('c8sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c8eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2engEng')">English Medium</button>
+          <button onclick="openMedium('c2engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c2hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2hinEng')">English Medium</button>
+          <button onclick="openMedium('c2hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c2math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2mathEng')">English Medium</button>
+          <button onclick="openMedium('c2mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes</li>
+            <li>Chapter 2 – Numbers 1–10</li>
+            <li>Chapter 3 – Addition</li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c2mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ</li>
+            <li>अध्याय 2 – संख्या 1–10</li>
+            <li>अध्याय 3 – जोड़</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c2sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sciEng')">English Medium</button>
+          <button onclick="openMedium('c2sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things</li>
+            <li>Chapter 2 – Plants</li>
+            <li>Chapter 3 – Animals</li>
+          </ul>
+        </div>
+
+        <div id="c2sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें</li>
+            <li>अध्याय 2 – पौधे</li>
+            <li>अध्याय 3 – जानवर</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c2sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c2sstEng')">English Medium</button>
+          <button onclick="openMedium('c2sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c2sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family</li>
+            <li>Chapter 2 – My School</li>
+            <li>Chapter 3 – Our Helpers</li>
+          </ul>
+        </div>
+
+        <div id="c2sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार</li>
+            <li>अध्याय 2 – मेरा विद्यालय</li>
+            <li>अध्याय 3 – हमारे सहायक</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLASS 9 -->
+    <div id="class9" class="class-box">
+      <h2>Class 9 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c9eng')">English</button>
+        <button onclick="openSubject('c9hin')">Hindi</button>
+        <button onclick="openSubject('c9math')">Maths</button>
+        <button onclick="openSubject('c9sci')">Science</button>
+        <button onclick="openSubject('c9sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c9eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+        <div class="medium-list">
+          <button onclick="openMedium('c9engEng')">English Medium</button>
+          <button onclick="openMedium('c9engHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c9engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="pdfs/class9/english/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class9/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c9engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class9/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class9/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class9/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c9hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+        <div class="medium-list">
+          <button onclick="openMedium('c9hinEng')">English Medium</button>
+          <button onclick="openMedium('c9hinHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c9hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class9/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class9/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class9/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c9hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class9/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class9/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class9/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c9math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+        <div class="medium-list">
+          <button onclick="openMedium('c9mathEng')">English Medium</button>
+          <button onclick="openMedium('c9mathHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c9mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Numbers 1–10
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Addition
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c9mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – संख्या 1–10
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जोड़
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c9sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+        <div class="medium-list">
+          <button onclick="openMedium('c9sciEng')">English Medium</button>
+          <button onclick="openMedium('c9sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c9sciEng" class="medium-box">
+          <h4>Science – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Plants
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Animals
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c9sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – पौधे
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जानवर
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c9sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+        <div class="medium-list">
+          <button onclick="openMedium('c9sstEng')">English Medium</button>
+          <button onclick="openMedium('c9sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c9sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – My School
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Our Helpers
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c9sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – मेरा विद्यालय
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – हमारे सहायक
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLASS 10 -->
+    <div id="class10" class="class-box">
+      <h2>Class 10 – All Subjects</h2>
+
+      <!-- SUBJECT BUTTONS -->
+      <div class="subject-list">
+        <button onclick="openSubject('c10eng')">English</button>
+        <button onclick="openSubject('c10hin')">Hindi</button>
+        <button onclick="openSubject('c10math')">Maths</button>
+        <button onclick="openSubject('c10sci')">Science</button>
+        <button onclick="openSubject('c10sst')">SST</button>
+      </div>
+
+      <!-- ================= ENGLISH ================= -->
+      <div id="c10eng" class="subject-box">
+        <h3>English (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c10engEng')">English Medium</button>
+          <button onclick="openMedium('c10engHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c2engEng" class="medium-box">
+          <h4>English – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – A Happy Child
+              <a href="chapter1.pdf" target="_blank">Open</a>
+              <a download href="chapter1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Three Little Pigs
+              <a href="pdfs/class1/english/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – The Bubble
+              <a href="pdfs/class1/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c10engHin" class="medium-box">
+          <h4>English – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – खुश बच्चा
+              <a href="pdfs/class1/english/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch1.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – तीन छोटे सूअर
+              <a href="pdfs/class1/english/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch2.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – बुलबुला
+              <a href="pdfs/class1/english/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/english/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= HINDI ================= -->
+      <div id="c10hin" class="subject-box">
+        <h3>Hindi (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c10hinEng')">English Medium</button>
+          <button onclick="openMedium('c10hinHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c10hinEng" class="medium-box">
+          <h4>Hindi – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Jhoola
+              <a href="pdfs/class1/hindi/em/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch1.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Aam ki Kahani
+              <a href="pdfs/class1/hindi/em/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch2.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Dosti
+              <a href="pdfs/class1/hindi/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c10hinHin" class="medium-box">
+          <h4>Hindi – Hindi Medium</h4>
+          <ul>
+            <li>पाठ 1 – झूला
+              <a href="pdfs/class1/hindi/hm/ch1.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch1.pdf">Download</a>
+            </li>
+            <li>पाठ 2 – आम की कहानी
+              <a href="pdfs/class1/hindi/hm/ch2.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch2.pdf">Download</a>
+            </li>
+            <li>पाठ 3 – दोस्ती
+              <a href="pdfs/class1/hindi/hm/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class1/hindi/hm/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= MATHS ================= -->
+      <div id="c10math" class="subject-box">
+        <h3>Maths (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c10mathEng')">English Medium</button>
+          <button onclick="openMedium('c10mathHin')">Hindi Medium</button>
+        </div>
+
+        <!-- English Medium -->
+        <div id="c10mathEng" class="medium-box">
+          <h4>Maths – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Shapes
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Numbers 1–10
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Addition
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hindi Medium -->
+        <div id="c10mathHin" class="medium-box">
+          <h4>Maths – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – आकृतियाँ
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – संख्या 1–10
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जोड़
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SCIENCE ================= -->
+      <div id="c10sci" class="subject-box">
+        <h3>Science (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c10sciEng')">English Medium</button>
+          <button onclick="openMedium('c10sciHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c10sciEng" class="medium-box">
+          <h4>Scie0nce – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – Living Things
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – Plants
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Animals
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c10sciHin" class="medium-box">
+          <h4>Science – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – जीवित चीजें
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – पौधे
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – जानवर
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SST ================= -->
+      <div id="c10sst" class="subject-box">
+        <h3>SST (Choose Medium)</h3>
+
+        <div class="medium-list">
+          <button onclick="openMedium('c10sstEng')">English Medium</button>
+          <button onclick="openMedium('c10sstHin')">Hindi Medium</button>
+        </div>
+
+        <div id="c10sstEng" class="medium-box">
+          <h4>SST – English Medium</h4>
+          <ul>
+            <li>Chapter 1 – My Family
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 2 – My School
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>Chapter 3 – Our Helpers
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="c10sstHin" class="medium-box">
+          <h4>SST – Hindi Medium</h4>
+          <ul>
+            <li>अध्याय 1 – मेरा परिवार
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 2 – मेरा विद्यालय
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+            <li>अध्याय 3 – हमारे सहायक
+              <a href="pdfs/class9/english/em/ch3.pdf" target="_blank">Open</a>
+              <a download href="pdfs/class9/english/em/ch3.pdf">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- =====GALLERY SECTION=====-->
+  <section class="gallery" id="gallery">
+    <h2>Our Gallery</h2>
+
+    <div class="gallery-container">
+
+      <div class="gallery-item"><img src="images/allstudent.jpg" alt=""></div>
+      <div class="gallery-item"><img src="images/arjun.jpeg" alt=""></div>
+      <div class="gallery-item"><img src="images/arjun.jpeg" alt=""></div>
+      <div class="gallery-item"><img src="images/arjun.jpeg" alt=""></div>
+      <div class="gallery-item"><img src="images/arjun.jpeg" alt=""></div>
+      <div class="gallery-item"><img src="images/arjun.jpeg" alt=""></div>
+
+    </div>
+  </section>
+
+  <!--=== CONTACT SECTION ====== -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+
+      <div class="contact-left">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-desc">We would love to hear from you. Fill the form and we will contact you soon!</p>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/invites/contact/?igsh=astfcspoivxz&utm_content=5geu511" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <!-- <a href="https://youtube.com/YOUR_CHANNEL" target="_blank"><i class="fab fa-youtube"></i></a> -->
+          <a href="https://www.facebook.com/arjun.arjun.659354" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/arjun-arjun-b6551128a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/Arjun859578" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form id="whatsappForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <input type="text" id="class" placeholder="Class" required>
+          <textarea id="message" placeholder="Your Message (optional)"></textarea>
+
+          <button type="button" class="contact-btn" onclick="sendToWhatsApp()">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!--===== FOOTER SECTION ===== -->
+  <footer>
+    <div class="footer-container">
+      <!-- About / Branding -->
+      <div class="footer-section about">
+        <h2 class="glow">Rankers Academy</h2>
+        <p>Making learning maths fun and easy for every student. Explore our notes, tests, and classes from Class 1 to
+          12.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h3 class="glow">Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="notes.html">Notes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2023 Rankers Academy. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- ====== JS FOR NAVBAR TOGGLE ====== -->
+  <script>
+    // Toggle mobile menu
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <!-- connect js  -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
